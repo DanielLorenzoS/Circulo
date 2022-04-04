@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@100&display=swap');
+
+* {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	background-image: url(imagenes/font.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Poiret One', cursive;		
+	
+}
+.title {
+	margin-left: 10px;
+	align-self: center;
+}
+.nav {
+	display: flex;	
+}
+.nav h1 {
+	align-self: center;
+	margin: 15px;
+	cursor: pointer;
+	transition: .5s ease-out;
+}
+.nav h1 a {
+	text-decoration: none;
+	color: #000;
+}
+.nav h1:hover {
+	color: #666;
+}
+
+.beggin {
+	width: 100%;
+	height: 100vh;
+	/*background-size: cover;
+	background-repeat: no-repeat;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.titles {
+	font-family: 'Poiret One', cursive;
+	font-size: 35px;
+	margin: 0 auto;
+	display: flex;
+	letter-spacing: 8px;
+	/*border-bottom: 2px solid #002570;*/
+	color: #002570;
+}
+.titles h4 {
+	margin-left: -5%;
+	position: absolute;
+	letter-spacing: 0;
+	border-bottom: 2px solid #002570;
+}
+.titles h3 {
+	margin-left: -4%;
+	margin-top: 84px;
+	position: absolute;
+	letter-spacing: 0;
+}
+/*.titles span {
+	letter-spacing: 0;
+	position: absolute;
+	-webkit-transform: rotate(-90deg); 
+	margin-left: -8px;
+	margin-top: 2px;
+	font-size: 18px;
+}*/
+.news-section {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	top: 480px;
+
+	color: #ccc;
+}
+.news {
+	font-size: 20px;
+	width: 80%;
+	height: 30vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	background: #002570;
+}
+.news1, .news2, .news3 {
+	margin: 13px;
+}
+.services-section {
+	margin: 0 200px;
+}
+.services {
+	margin-top: 200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px 20px;
+}
+#s1, #s2, #s3, #s4 {
+	
+	height: 35vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	box-shadow: 15px 7px 7px #000C38;
+	background: #002570;
+	color: #fff;
+	transition: 2s ease-in-out;
+}
+.serv {
+	margin: 15px;
+}
+.more {
+	align-self: flex-end;
+	text-decoration-line: underline;
+	cursor: pointer;
+}
+.service1, .service3 {
+	margin-left: -300px;
+	opacity: 0;
+}
+
+.service2, .service4 {
+	margin-left: 200px;
+	opacity: 0;
+}
+.serviceCenter {
+	margin-left: 0px;
+	opacity: 1;
+}
+
+
+
+footer {
+	margin-top: 200px;
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+}
+.phone, .maps, .form {
+	margin: 20px;
+	height: 300px;
+	width: 30%;
+	padding: 10px;
+	border: 4px double #002570;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.phone {
+	font-size: 22px;
+	font-weight: 800;
+}
+.phone h4 {
+	margin: 10px auto;
+}
