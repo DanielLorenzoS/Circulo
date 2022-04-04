@@ -8,61 +8,56 @@ let card4 = document.getElementById('s4');
 let services = document.querySelector('.services')
 
 let options = {
-	threshold: 1.0
+	threshold: 0.9
 }
 
-const verifyVisibility = (entries) => {
-	const entry = entries[0];
+let verifyVisibility = (entries) => {
+	let entry = entries[0];
     if (entry.isIntersecting) {
     	card1.setAttribute('class', 'serviceCenter');
     	card2.setAttribute('class', 'serviceCenter');
-		card3.setAttribute('class', 'serviceCenter');
-		card4.setAttribute('class', 'serviceCenter');
+		  card3.setAttribute('class', 'serviceCenter');
+		  card4.setAttribute('class', 'serviceCenter');
     }
 }
 const observer = new IntersectionObserver(verifyVisibility, options);
     
 observer.observe(services);
 
+let phone = document.getElementById('phone');
+let maps = document.getElementById('map');
+let form = document.getElementById('form');
+
+const verify = (entries) => {
+  const entry = entries[0];
+    if (entry.isIntersecting) {
+      phone.style.opacity = '1';
+      maps.style.opacity = '1';
+      form.style.opacity = '1';
+    }
+}
+const observador = new IntersectionObserver(verify, options);
+    
+observador.observe(phone);
+
+
+
 function initMap() {
+  const polanco = { lat: 19.433797973738496, lng: -99.19090478692605 };
   const chicago = new google.maps.LatLng(19.433797973738496, -99.19090478692605);
   const map = new google.maps.Map(document.getElementById("map"), {
     center: chicago,
-    zoom: 15,
+    zoom: 16,
   });
-  const coordInfoWindow = new google.maps.InfoWindow();
 
-  coordInfoWindow.setContent(createInfoWindowContent(chicago, map.getZoom()));
-  coordInfoWindow.setPosition(chicago);
-  coordInfoWindow.open(map);
-  map.addListener("zoom_changed", () => {
-    coordInfoWindow.setContent(createInfoWindowContent(chicago, map.getZoom()));
-    coordInfoWindow.open(map);
+  const marker = new google.maps.Marker({
+    position: polanco,
+    map: map,
   });
 }
 
 const TILE_SIZE = 256;
 
-function createInfoWindowContent(latLng, zoom) {
-  const scale = 1 << zoom;
-  const worldCoordinate = project(latLng);
-  const pixelCoordinate = new google.maps.Point(
-    Math.floor(worldCoordinate.x * scale),
-    Math.floor(worldCoordinate.y * scale)
-  );
-  const tileCoordinate = new google.maps.Point(
-    Math.floor((worldCoordinate.x * scale) / TILE_SIZE),
-    Math.floor((worldCoordinate.y * scale) / TILE_SIZE)
-  );
-  return [
-    "Polanco, CDMX",
-    "LatLng: " + latLng,
-    "Zoom level: " + zoom,
-    "World Coordinate: " + worldCoordinate,
-    "Pixel Coordinate: " + pixelCoordinate,
-    "Tile Coordinate: " + tileCoordinate,
-  ].join("<br>");
-}
 
 // The mapping between latitude, longitude and pixels is defined by the web
 // mercator projection.
