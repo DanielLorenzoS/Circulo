@@ -1,3 +1,11 @@
+let img = document.getElementById('img');
+let nav = document.querySelector('.nav');
+let title = document.querySelector('.title');
+
+img.style.marginTop = '0'
+nav.style.marginRight = '0'
+title.style.marginLeft = '10px'
+
 
 let btn = document.getElementById('btn');
 let card1 = document.getElementById('s1');
@@ -27,18 +35,20 @@ observer.observe(services);
 let phone = document.getElementById('phone');
 let maps = document.getElementById('map');
 let form = document.getElementById('form');
+let footer = document.getElementById('footer');
 
 const verify = (entries) => {
   const entry = entries[0];
     if (entry.isIntersecting) {
-      phone.style.opacity = '1';
-      maps.style.opacity = '1';
-      form.style.opacity = '1';
+      phone.style.marginTop = '20px';
+      maps.style.marginTop = '20px';
+      form.style.marginTop = '20px';
     }
 }
-const observador = new IntersectionObserver(verify, options);
+
+const observador = new IntersectionObserver(verify);
     
-observador.observe(phone);
+observador.observe(footer);
 
 
 
