@@ -21,9 +21,7 @@
 	<main>
 		<section class="beggin">
 			<div class="titles">
-				<div>C<span>IR</span>C<span>UL</span>O</div>
-				<h4>Integral de Negocios</h4>
-				<h3>Asesores Legales</h3>
+				<img id="img" src="imagenes/logo.png">
 			</div>
 
 
@@ -70,7 +68,7 @@
 		</section>
 	</main>
 	<div id="contacto"></div>
-	<footer>
+	<footer id="footer">
 		<section class="phone" id="phone">
 			<a href="tel:+5586804039">Teléfono: +52 5512131565</a> <br>
 			<a href="mailto:lorenzccaz@gmail.com">Correo: contacto@circulojuridico.com</a> <br>
@@ -80,12 +78,25 @@
 			
 		</section>
 		<section class="form" id="form">
-			
+			<form>
+				<input type="text" name="name" placeholder="Escribe tu nombre...">
+				<input type="number" name="phone" placeholder="Escribe tu número...">
+				<select>
+					<option>Elige tu caso...</option>
+					<option>ASESORÍA JURÍDICA (Trabajadores)</option>
+					<option>CONSULTORÍA EMPRESARIAL</option>
+					<option>LITIGIO EN MATERIA LABORAL</option>
+					<option>. . .</option>
+				</select>
+				<input type="submit" name="enviar" value="Enviar">
+			</form>
 		</section>
 	</footer>
-
-
+	<section class="aviso">
+			<h3><a href="">Aviso de privacidad</a></h3>
+		</section>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="obs.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW2npadploeFZE5Imq7YURRFf5Oj-zz5A&region=MX&language=es&callback=initMap"></script>
 </body>
 </html>
