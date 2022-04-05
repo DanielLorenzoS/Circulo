@@ -101,6 +101,7 @@ body {
 }*/
 .services-section {
 	margin: 0 200px;
+	overflow: hidden;
 }
 .services {
 	margin-top: 160px;
