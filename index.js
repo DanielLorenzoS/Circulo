@@ -1,10 +1,12 @@
 let img = document.getElementById('img');
 let nav = document.querySelector('.nav');
 let title = document.querySelector('.title');
+let menu = document.querySelector('.img-menu');
 
-img.style.marginTop = '0'
+// img.style.marginTop = '0'
 nav.style.marginRight = '0'
 title.style.marginLeft = '10px'
+menu.style.marginRight = '10px'
 
 
 let btn = document.getElementById('btn');
@@ -16,7 +18,7 @@ let card4 = document.getElementById('s4');
 let services = document.querySelector('.services')
 
 let options = {
-	threshold: 0.9
+	threshold: 0.5
 }
 
 let verifyVisibility = (entries) => {
