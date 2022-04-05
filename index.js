@@ -121,6 +121,7 @@ servicio.addEventListener('click', () => {
     piv = false;
 });
 contacto.addEventListener('click', () => {
+    imgm.style.transform = 'rotate(0deg)'
     nav.style.left = '400px';
     nav.style.right = '-400px';
     piv = false;
