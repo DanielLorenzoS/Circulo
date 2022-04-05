@@ -11,6 +11,9 @@ body {
 	background-repeat: no-repeat;
 
 }
+.main {
+	overflow: hidden;
+}
 
 .header {
 	position: fixed;
@@ -29,6 +32,9 @@ body {
 	margin-left: -1000px;
 	align-self: center;
 	transition: 1s ease-in-out;
+}
+.nav-res {
+	display: none;
 }
 .nav {
 	display: flex;	
@@ -110,14 +116,13 @@ body {
 	grid-gap: 30px 60px;
 }
 #s1, #s2, #s3, #s4 {
-	
 	height: 35vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
+	flex-direction: column;
 	box-shadow: 15px 7px 7px #000C38;
 	background: #002570;
 	color: #fff;
@@ -147,7 +152,7 @@ body {
 
 
 
-footer {
+#footer {
 	margin-top: 300px;
 	font-family: 'Raleway', sans-serif;
 	display: flex;
