@@ -2,6 +2,13 @@
   .services-section {
     margin: 0 50px;
   }
+  footer {
+    flex-direction: column;
+  }
+  #phone, #map, #form {
+    margin: 10px auto;
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 630px) {
   .services {
@@ -12,12 +19,6 @@
   }
   .services-section {
     margin: 0 150px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .services-section {
-    margin: 0 15px;
   }
 }
 
@@ -43,12 +44,29 @@
   .beggin {
     height: 80vh;
   }
+  .nav-res {
+    display: inline-block;
+    position: fixed;
+    margin: 100px 50px 0 50px;
+    left: 400px;
+    right: -400px;
+
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    text-align: center;
+    background: #002570;
+    transition: 1s ease-in-out;
+    z-index: 10;
+  }
+  .inicio, .servicio, .contacto { 
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 500px) {
   .services-section {
-    margin: 7px;
-    margin-left: 12px;
+    margin: 10px 15px;
   }
   .services {
     margin-top: 160px;
@@ -58,18 +76,53 @@
   #s1, #s2, #s3, #s4 {
     padding: 5px;
     height: 20vh;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 10px;
-    background: #002570;
-    color: #fff;
-    transition: 1s ease-out;
+    width: 80%; 
   }
   .more {
     align-self: center;
     text-decoration-line: underline;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #phone, #map, #form {
+    margin: 10px auto;
+    height: 200px;
+    width: 75%;
+  }  
+}
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 25px;
+  }
+  .img-menu {
+    margin-right: -500px;
+    max-width: 50px;
+    max-height: 70px;
+  }
+  .beggin {
+    height: 60vh;
+  }
+  #img {
+    margin-top: 100px;
+  }
+  .inicio, .servicio, .contacto {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  #phone a {
+    font-size: 17px;
+  } 
+  #form input, #form select {
+    font-size: 10px;
+    margin: 10px 25px;
+  }
+  #form input[type=submit] {
+    margin: 10px auto;
+  }
+  .aviso {
+    font-size: 12px;
   }
 }
