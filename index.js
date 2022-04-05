@@ -85,3 +85,43 @@ function project(latLng) {
   );
 }
 
+mn = document.querySelector('.btn-menu');
+imgm = document.querySelector('.img-menu');
+nav = document.querySelector('.nav-res');
+piv = false;
+
+mn.addEventListener('click', () => {
+  if (piv == false){
+    imgm.style.transform = 'rotate(90deg)'
+    nav.style.left = '0';
+    nav.style.right = '0';
+    piv = true;
+  }else {
+    imgm.style.transform = 'rotate(0deg)'
+    nav.style.left = '400px';
+    nav.style.right = '-400px';
+    piv = false;
+  }
+})
+
+inicio = document.querySelector('.inicio');
+servicio = document.querySelector('.servicio');
+contacto = document.querySelector('.contacto');
+
+inicio.addEventListener('click', () => {
+    imgm.style.transform = 'rotate(0deg)'
+    nav.style.left = '400px';
+    nav.style.right = '-400px';
+    piv = false;
+});
+servicio.addEventListener('click', () => {
+    imgm.style.transform = 'rotate(0deg)'
+    nav.style.left = '400px';
+    nav.style.right = '-400px';
+    piv = false;
+});
+contacto.addEventListener('click', () => {
+    nav.style.left = '400px';
+    nav.style.right = '-400px';
+    piv = false;
+});
