@@ -19,7 +19,9 @@ body {
 	
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	font-family: 'Poiret One', cursive;	
+	color: #002570;
 	text-shadow: 1px 2px 2px #000;	
 	
 }
@@ -31,6 +33,7 @@ body {
 .nav {
 	display: flex;	
 	margin-right: -1000px;
+
 	transition: 1s ease-in-out;
 }
 .nav h1 {
@@ -41,7 +44,7 @@ body {
 }
 .nav h1 a {
 	text-decoration: none;
-	color: #000;
+	color: #002570;
 }
 .nav h1:hover {
 	color: #666;
@@ -65,11 +68,14 @@ body {
 	/*border-bottom: 2px solid #002570;*/
 	color: #002570;
 }
-.titles img {
-	margin-top: 1000px;
+#img {
+	margin-top: 0px;
 	max-width: 350px;
 	max-height: 350px;
 	transition: 1s ease-in-out;
+}
+.btn-menu {
+	display: none;
 }
 
 /*.news-section {
@@ -100,7 +106,7 @@ body {
 	margin-top: 160px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px 20px;
+	grid-gap: 30px 60px;
 }
 #s1, #s2, #s3, #s4 {
 	
