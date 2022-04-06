@@ -26,12 +26,14 @@ body {
 	font-family: 'Poiret One', cursive;	
 	color: #002570;
 	text-shadow: 1px 2px 2px #000;	
+        background: #002570;
 	
 }
 .title {
 	margin-left: -1000px;
 	align-self: center;
 	transition: 1s ease-in-out;
+        color: #fff;
 }
 .nav-res {
 	display: none;
@@ -50,7 +52,7 @@ body {
 }
 .nav h1 a {
 	text-decoration: none;
-	color: #002570;
+	color: #ffffff;
 }
 .nav h1:hover {
 	color: #666;
