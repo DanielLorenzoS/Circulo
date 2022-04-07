@@ -27,7 +27,7 @@
     display: none;
   }
   #img {
-    margin-top: -100px;
+    margin-top: -150px;
     max-width: 300px;
     max-height: 300px;
   }
@@ -59,9 +59,10 @@
     z-index: 10;
   }
   .inicio, .servicio, .contacto { 
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Poiret One', cursive;	
+    font-family: 'Poiret One', cursive; 
   }
 }
 
