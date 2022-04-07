@@ -98,8 +98,8 @@ mn.addEventListener('click', () => {
     piv = true;
   }else {
     imgm.style.transform = 'rotate(0deg)'
-    nav.style.left = '400px';
-    nav.style.right = '-400px';
+    nav.style.left = '1000px';
+    nav.style.right = '-1000px';
     piv = false;
   }
 })
@@ -110,20 +110,20 @@ contacto = document.querySelector('.contacto');
 
 inicio.addEventListener('click', () => {
     imgm.style.transform = 'rotate(0deg)'
-    nav.style.left = '400px';
-    nav.style.right = '-400px';
+    nav.style.left = '1000px';
+    nav.style.right = '-1000px';
     piv = false;
 });
 servicio.addEventListener('click', () => {
     imgm.style.transform = 'rotate(0deg)'
-    nav.style.left = '400px';
-    nav.style.right = '-400px';
+    nav.style.left = '1000px';
+    nav.style.right = '-1000px';
     piv = false;
 });
 contacto.addEventListener('click', () => {
     imgm.style.transform = 'rotate(0deg)'
-    nav.style.left = '400px';
-    nav.style.right = '-400px';
+    nav.style.left = '1000px';
+    nav.style.right = '-1000px';
     piv = false;
 });
 
