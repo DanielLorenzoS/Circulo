@@ -36,15 +36,15 @@ observer.observe(services);
 
 let phone = document.getElementById('phone');
 let maps = document.getElementById('map');
-let form = document.getElementById('form');
+// let form = document.getElementById('form');
 let footer = document.getElementById('footer');
 
 const verify = (entries) => {
   const entry = entries[0];
     if (entry.isIntersecting) {
-      phone.style.marginTop = '20px';
-      maps.style.marginTop = '20px';
-      form.style.marginTop = '20px';
+      phone.style.display = 'flex';
+      maps.style.display = 'block';
+      // form.style.marginTop = '20px';
     }
 }
 
@@ -59,7 +59,7 @@ function initMap() {
   const chicago = new google.maps.LatLng(19.433797973738496, -99.19090478692605);
   const map = new google.maps.Map(document.getElementById("map"), {
     center: chicago,
-    zoom: 16,
+    zoom: 18,
   });
 
   const marker = new google.maps.Marker({
@@ -126,3 +126,4 @@ contacto.addEventListener('click', () => {
     nav.style.right = '-400px';
     piv = false;
 });
+
