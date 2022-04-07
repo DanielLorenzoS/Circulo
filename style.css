@@ -24,16 +24,17 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	font-family: 'Poiret One', cursive;	
-	color: #002570;
-	text-shadow: 1px 2px 2px #000;	
-        background: #002570;
+	color: #fff;
+	background: #002570;
+	border-bottom: 2px solid #001460;
+	text-shadow: 1px 2px 2px #fff;	
 	
 }
 .title {
 	margin-left: -1000px;
 	align-self: center;
 	transition: 1s ease-in-out;
-        color: #fff;
+	cursor: default;
 }
 .nav-res {
 	display: none;
@@ -52,9 +53,11 @@ body {
 }
 .nav h1 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
+	font-size: 30px;
+	transition: .3s ease-out;
 }
-.nav h1:hover {
+.nav h1 a:hover {
 	color: #666;
 }
 
@@ -115,7 +118,7 @@ body {
 	margin-top: 160px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 30px 60px;
+	grid-gap: 20px 40px;
 }
 #s1, #s2, #s3, #s4 {
 	height: 35vh;
@@ -128,55 +131,51 @@ body {
 	box-shadow: 15px 7px 7px #000C38;
 	background: #002570;
 	color: #fff;
+	cursor: pointer;
 	transition: 1s ease-out;
 }
 .serv {
 	margin: 15px;
 }
-.more {
-	align-self: flex-end;
-	text-decoration-line: underline;
-	cursor: pointer;
-}
 .service1, .service3 {
-	margin-left: -300px;
+	display: none;
+	margin-left: -1000px;
 	opacity: 0;
 }
 
 .service2, .service4 {
-	margin-left: 200px;
+	display: none;
+	margin-left: 1000px;
 	opacity: 0;
 }
 .serviceCenter {
+	display: flex;
 	margin-left: 0px;
 	opacity: 1;
 }
-
-
-
+.more {
+	align-self: center;
+	text-decoration-line: underline;
+	cursor: pointer;
+}
 #footer {
 	margin-top: 300px;
 	font-family: 'Raleway', sans-serif;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: #002570;
 	overflow: hidden;
 }
-.phone, .maps, .form {
-	margin: 20px;
+.phone {
+	display: none;
 	height: 300px;
 	width: 30%;
 	padding: 10px;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 500px;
-	transition: 1s ease-in-out;
-	
-}
-.maps {
-	border-radius: 5px;
-	grid-area: maps;
+	transition: 2s ease-in-out;	
 }
 .phone a {
 	font-size: 22px;
@@ -184,14 +183,16 @@ body {
 	margin-top: 20px;
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
-	grid-area: phone;
 }
-
+.maps {
+	height: 250px;
+	width: 25%;
+	border-radius: 5px;
+	display: none;
+	transition: 2s ease-in-out;	
+}
 .phone:hover, .maps:hover, .form:hover {
 	opacity: 1;
-}
-.form {
-	grid-area: form;
 }
 form {
 	display: flex;
@@ -204,6 +205,7 @@ input {
 	border: 2px solid #88acf8;
 	color: #fff;
 	background: transparent;
+	text-align: center;
 }
 select {
 	padding: 10px;
@@ -236,5 +238,9 @@ input[type=submit]{
 	background: #002570;
 }
 .aviso h3 a {
-	color: #fff;
+	color: #aaa;
 }
+.cop {
+	text-decoration: none;
+}
+
