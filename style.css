@@ -153,6 +153,12 @@ body {
 	margin-left: 0px;
 	opacity: 1;
 }
+.img-serv {
+	max-width: 100px;
+	max-height: 100px;
+	min-width: 100px;
+	min-height: 100px;
+}
 .more {
 	align-self: center;
 	text-decoration-line: underline;
