@@ -31,6 +31,9 @@
     max-width: 300px;
     max-height: 300px;
   }
+  .titles {
+    margin-top: 200px;
+  }
   .btn-menu {
     display: inline-block;
   }
@@ -94,9 +97,16 @@
     width: 75%;
   }  
 }
-@media only screen and (max-width: 350px) {
-  .title {
-    font-size: 25px;
+@media only screen and (max-width: 290px) {
+  .titles img {
+    font-size: 15px;
+  }
+  /*.arrow {
+    margin-top: 50px;
+  }
+  .arrow img {
+    animation: none;
+    z-index: 10;
   }
   .img-menu {
     margin-right: -500px;
@@ -111,7 +121,7 @@
   }
   .inicio, .servicio, .contacto {
     font-size: 25px;
-  }
+  } */
 }
 @media only screen and (max-width: 310px) {
   #phone a {
