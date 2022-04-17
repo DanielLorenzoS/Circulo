@@ -65,25 +65,49 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 100vh;
-	/*background-size: cover;
-	background-repeat: no-repeat;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .titles {
-
 	margin: 0 auto;
 	display: flex;
 	letter-spacing: 8px;
-	/*border-bottom: 2px solid #002570;*/
 	color: #002570;
 }
 #img {
 	margin-top: 0px;
+	margin-bottom: 50px;
 	max-width: 350px;
 	max-height: 350px;
 	transition: 1s ease-in-out;
+}
+.arrow {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+.arrow img {
+	position: relative;
+	margin: auto;
+	max-width: 50px;
+	min-height: 50px;
+	transform: rotate(90deg);
+	cursor: pointer;
+	animation: 1s down alternate infinite;
+}
+@keyframes down {
+	from {
+		margin-top: 0;
+	}to {
+		margin-top: 50px;
+	}
+}
+.arrow img:hover {
+	animation: none;
+	padding: 3px;
+	border-radius: 50%;
+	background: #668bc5;
 }
 .btn-menu {
 	display: none;
